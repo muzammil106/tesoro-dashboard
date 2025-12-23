@@ -190,7 +190,7 @@ export default memo(function ContentsListPage() {
           <div className="md:col-span-12">
             <p className="mb-1 text-xs font-medium text-slate-600">Rows</p>
             <div className="w-24">
-              <Select value={String(pageSize)} onChange={(e) => setPageSize(Number(e.target.value))}>
+              <Select value={String(pageSize)} onChange={(val) => setPageSize(Number(val))}>
                 <option value="15">15</option>
                 <option value="30">30</option>
                 <option value="50">50</option>
