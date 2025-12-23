@@ -368,7 +368,7 @@ export default memo(function TreasureListPage() {
 
           <div className="md:col-span-2">
             <p className="mb-1 text-xs font-medium text-slate-600">Scope</p>
-            <Select value={scope} onChange={(e) => setFilterParam('scope', e.target.value)}>
+            <Select value={scope} onChange={(val) => setFilterParam('scope', val)}>
               <option value="all">All</option>
               <option value="mine">Mine</option>
             </Select>
@@ -376,7 +376,7 @@ export default memo(function TreasureListPage() {
 
           <div className="md:col-span-2">
             <p className="mb-1 text-xs font-medium text-slate-600">Condition</p>
-            <Select value={condition} onChange={(e) => setFilterParam('condition', e.target.value)}>
+            <Select value={condition} onChange={(val) => setFilterParam('condition', val)}>
               <option value="">All</option>
               <option value="New">New</option>
               <option value="Used">Used</option>
@@ -386,7 +386,7 @@ export default memo(function TreasureListPage() {
 
           <div className="md:col-span-3">
             <p className="mb-1 text-xs font-medium text-slate-600">Category</p>
-            <Select value={category} onChange={(e) => setFilterParam('category', e.target.value)}>
+            <Select value={category} onChange={(val) => setFilterParam('category', val)}>
               <option value="">All</option>
               {categoryRows.map((c) => {
                 const id = c._id || c.id
