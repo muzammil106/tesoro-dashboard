@@ -468,7 +468,7 @@ export default memo(function UsersListPage() {
             <p className="mb-1 text-xs font-medium text-slate-600">Premium</p>
             <Select
               value={isPremium}
-              onChange={(e) => setFilterParam('isPremium', e.target.value)}
+              onChange={(val) => setFilterParam('isPremium', val)}
             >
               <option value="">All</option>
               <option value="true">Premium</option>
@@ -480,7 +480,7 @@ export default memo(function UsersListPage() {
             <p className="mb-1 text-xs font-medium text-slate-600">Rows</p>
             <Select
               value={String(pageSize)}
-              onChange={(e) => setPageSize(Number(e.target.value))}
+              onChange={(val) => setPageSize(Number(val))}
             >
               <option value="15">15</option>
               <option value="30">30</option>
